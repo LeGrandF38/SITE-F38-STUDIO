@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link>
+    <link rel="stylesheet" type="text/css" href="home.css" href="//fonts.googleapis.com/css?family=Anton" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>F38 STUDIO</title>
+    
+</head>
+<body>
+
+    <!-- Le header en haut de la page -->
+    <header>
+        <!-- Le logo F38 STUDIO en haut de la page -->
+        <a class="logo" href="#">
+            <div class="f38">F38</div>
+            <div class="studio">STUDIO</div>
+        </a>
+        <!-- boutton menu (pour petit ecran) -->
+        <div class="menuButon"></div>
+      
+        <!-- Le menu en haut de la page -->
+        <nav>
+            <ul>
+                <li><a href="#" class="activePage">Home</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Vides</a></li>
+                <li><a href="#">Sites web et applications</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- correction du cadre du header -->
+        <div class="clearFloat"></div>
+    </header>
+    <!-- Ce scrip est sensé faire apparaitre un rideau de lite(notre contenu du nav) sur les ecrants telphones seulement -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <!-- Celui ci doit accopagner le premier Fsad(emoji sad) -->
+    <script type="text/javascript">
+        // Fsad
+        $(document).ready(function(){
+            //Donc Dès qu'on clique sur menuButon, il faut excecuter les instructions suivantes
+            $(".menuButon").click(function(){
+                //menuButon aura une nouvelle classe qui s'appelle 'active'
+                $(".menuButon").toggleClass("active")
+                //comme menuButon, <nav> aussi aura sera desormais ratachée à un nouvelle classe qui sappelle 'active'
+                $("nav").toggleClass("active")
+            })
+        })
+    </script>
+    
+    
+    
+</body>
+</html>
