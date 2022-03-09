@@ -6,10 +6,12 @@
 body{
     margin: 0;
     padding: 0;
+    
     font-family: "poppins", sans-serif;
     
     
 }
+/* ////////////////Le header////////////////////////// */
 .logo{
     display: flex;
     color: white;
@@ -144,4 +146,106 @@ nav ul li a:hover{
     nav.active ul li a{
         margin: 5px;
     }
+}
+/* //////////////////////Positionnement du cadre 1//////////////////////////// */
+
+.cadre1{
+    padding-top: 5px;
+    outline: 2px solid red;
+    background-image: url("https://unsplash.it/1280/720");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    
+
+    
+    
+  
+    
+}
+.welcomePng{
+    
+    max-width: 60%;
+    
+    
+    
+    
+}
+/* Sliders */
+.cadre2{
+     
+    outline: 2px solid blue;
+    overflow-x: hidden;
+ 
+    
+}
+.hi-slide{
+    position: relative;
+    width: 756px;
+    height: 292px;
+    margin: 150px auto 0;
+
+}
+.hi-slide .hi-next, 
+.hi-slide .hi-prev{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+    transition: all 0.6s;
+    font-weight: bold;
+
+}
+
+.hi-slide .hi-next:hover, 
+.hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+.hi-slide .hi-prev{
+    left: -70px;
+}
+.hi-slide .hi-prev::before{
+    content: "<";
+}
+
+.hi-slide .hi-next{
+    right: -70px;
+}
+.hi-slide .hi-prev::before{
+    content: ">";
+}
+
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+
+
+}
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    background-color: #333;
+    cursor: pointer;
 }
