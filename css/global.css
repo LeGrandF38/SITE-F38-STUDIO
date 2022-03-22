@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url("/img/bg.jpg");  
+    
+    font-family: "poppins", sans-serif;
+    
+    
+}
+h1, h2, p{
+    color: white;
+}
+.banText{
+    text-align: left;
+    max-width: 80%;
+    padding: 12px;
+}
+/* ////////////////Le header////////////////////////// */
+.logo{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    float: left;
+    
+    /* P2 */
+}
+.f38 {
+    font-size: 40px ;
+    border: 3px solid;
+    font-family: "Anton";
+    padding: 3px;
+    
+    
+    
+}
+.studio{
+    font-size: 30px ;
+    border: 4px solid;
+    border-color: #000;
+    font-family: "Arial";
+    text-align: end;
+    margin: auto;
+    
+    
+}
+
+header{
+    margin: 20px auto;
+    padding: 10px;
+    background: #000;
+    border-radius: 10px;
+    /* Couleur de l'ombre du header (red green blue alpha)*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+
+    
+    /* P2 */
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1200px;
+}
+
+nav{
+    float: right;
+    
+}
+/* blocage du float qui deborde */
+.clearFloat{
+    clear: both;
+}
+a{
+    float: left;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;    
+}
+nav ul li{
+    list-style: none;
+     
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0 ;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* animation: coloration de la nav comme boutton */
+nav ul li a.activePage,
+nav ul li a:hover{
+    background: white;
+    color: #000;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+/* Des que nous sommes inferieur à 1200px appliquons ce qui suit */
+@media(max-width :1200px)
+{
+    header{
+        margin: 20px;
+    }
+}
+
+/* Des que nous sommes inferieur à 867px appliquons ce qui suit */
+@media(max-width :867px)
+{   
+    /* (.menuBoutton)  c'est le petit <div> vide entre le logo et  la <nav ul>. Je vais en faire un boutton quand la taille est inferieur à 867px(estimée dimmenssion d'un telphone.*/
+    .menuButon{
+        margin: 20px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background: black;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+    .menuButon:before{
+        content: "\f0c9";
+        font-family: "fontAwesome";
+        line-height: 40px;
+        
+    }
+    .menuButon.active:before{
+        content: "\f00d";
+        font-family: "fontAwesome";
+        line-height: 40px;
+        
+    }
+
+    nav {
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+    }
+   
+    nav.active ul{
+        display: block;
+        
+    }
+    nav.active ul li a{
+        margin: 5px;
+    }
+}
+/* //////////////////////Positionnement du cadre 1//////////////////////////// */
+
+.cadre1{
+    padding-top: 5px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 0% 0% 5% 5%;
+    
+    
+
+    
+    
+  
+    
+}
+.welcomePng{
+    
+    max-width: 60%;
+    
+    
+    
+    
+}
+/* cadre2 */
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        /* L'ombre juste en bas */
+        
+      }
+ 

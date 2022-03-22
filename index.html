@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>F38 STUDIO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="//fonts.googleapis.com/css?family=Anton" >
+
+    <meta      name="viewport"      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"    />
+    <!-- Link Swiper's CSS -->
+    <link      rel="stylesheet"      href="https://unpkg.com/swiper/swiper-bundle.min.css"    />
+  <!-- Globale -->
+  <link rel="stylesheet" type="text/css" href="/css/global.css">
+  <!-- Specifique -->
+  <link rel="stylesheet" type="text/css" href="/css/acceuil.css">
+  </head>
+
+  <body>
+
+    <div class="cadre1">
+    
+      <!-- Le header en haut de la page -->
+      <header>
+          <!-- Le logo F38 STUDIO en haut de la page -->
+          <a class="logo" href="#">
+              <div class="f38">F38</div>
+              <div class="studio">STUDIO</div>
+          </a>
+          <!-- boutton menu (pour petit ecran) -->
+          <div class="menuButon"></div>
+        
+          <!-- Le menu en haut de la page -->
+          <nav>
+              <ul>
+                  <li><a href="#" class="activePage">Home</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Sites</a></li>
+                  <li><a href="#">applications</a></li>
+                  <li><a href="#">partenaires</a></li>
+                  <li><a href="#">NigerTalent</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+          <!-- correction du cadre du header -->
+          <div class="clearFloat"></div>
+      </header>
+      <!-- Ce scrip est sensé faire apparaitre un rideau de lite(notre contenu du nav) sur les ecrants telphones seulement -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" 
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+      crossorigin="anonymous"></script>
+      <!-- Celui ci doit accopagner le premier Fsad(emoji sad) -->
+      <script type="text/javascript">
+          // Fsad
+          $(document).ready(function(){
+              //Donc Dès qu'on clique sur menuButon, il faut excecuter les instructions suivantes
+              $(".menuButon").click(function(){
+                  //menuButon aura une nouvelle classe qui s'appelle 'active'
+                  $(".menuButon").toggleClass("active")
+                  //comme menuButon, <nav> aussi aura sera desormais ratachée à un nouvelle classe qui sappelle 'active'
+                  $("nav").toggleClass("active")
+              })
+          })
+      </script>
+  
+      <!-- ////////////////////Header End/////////////////////////////////////////////////////////////////// -->
+    
+      <div class="banText">
+        <h1>Niger</h1>
+        <p>Contactez nous via notre numero whatsApp</p>
+      </div>
+    
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+    <h1>NOS SERVICES</h1>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <h2>Sites web</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/img/acceuil/L300.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/acceuil/L300.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/acceuil/L300.png" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<h2>Design</h2>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/img/acceuil/P300.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/img/acceuil/P300.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/img/acceuil/P300.png" />
+    </div>
+    
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<h2>Videos</h2>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<h2>Applications</h2>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/img/acceuil/S300.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/img/acceuil/S300.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/img/acceuil/S300.png" />
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+<!-- Swiper initialisation -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- global -->
+<script src="/js/global.js"></script>
+<!-- Specifique -->
+<script src="/js/acceuil.js"></script>
+
+<h1>F38 STUDIO NIGER</h1>
+<P></P>
+<h2>Notre équipe</h2>
+<script type="/js/global.js"></script>
+<script type="/js/specifique.js"></script>
+  </body>
+</html>
