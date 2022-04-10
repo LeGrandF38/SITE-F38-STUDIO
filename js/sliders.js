@@ -25,14 +25,19 @@ var swiper2 = new Swiper(".mySwiper2", {
   centeredSlides: false,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 200,
+    rotate: 10,
+    stretch: 20,
+    depth: 10,
     modifier: 1,
     slideShadows: true,
     
   },
   loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
   
   
 });

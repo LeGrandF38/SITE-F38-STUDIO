@@ -136,4 +136,53 @@ h1,h2,p{
     color: #1369ce;
     background-color: #f7f5ec;
   }
+  /* ///////////////pROFIL cARD EQUIPE//////////////////////////////// */
+  .pCard{
+    margin-bottom: 0;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    border-radius: 10%;
+    bottom: 0;
+    margin-top: 60px;
+    border: 5px solid white;
+  }
+  .pCercle{
+  margin-top: 25px;
   
+  padding-bottom: 0;
+  position: relative;
+  top: -60px;
+  height: 130px;
+  width: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477") ,no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  }
+  h4, h5{
+    
+    color: white;
+    position:relative;
+   
+    text-align: center;
+    
+  }
+  h4{
+    top: -60px;
+    font-family: sans-serif;
+    
+    
+    font-weight: 100;
+    font-size: larger;
+  }
+  h5{
+    top: -60px;
+    
+
+  }
+  .p1 .pCercle{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/156905/profile/profile-512.jpg?1530296477") ,no-repeat;
+  }
