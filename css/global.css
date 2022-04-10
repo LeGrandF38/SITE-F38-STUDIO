@@ -1,33 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton");
-
-
-
 body{
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url("/img/bg.jpg");  
-    
-    font-family: "poppins", sans-serif;
-    
-    
+    background-image: url("../img/bg.jpg");    
+    font-family: "poppins", sans-serif;   
 }
-h1, h2, p{
+h1, h2,h3, p{
     color: white;
+
+    
 }
+
 .banText{
     text-align: left;
-    max-width: 80%;
+    max-width: 50%;
     padding: 12px;
 }
+.banT1, .banT2{
+    text-align: left;
+    padding: 0px;
+}
+.whatsapp{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+button{
+    border-radius: 10px;
+    width:150px;
+    height:40px;
+    background: linear-gradient(to left top, #25D366 50%, #25D366 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    border-radius: 10%;
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #128C7E);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #128C7E);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #075E54);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0),#075E54);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+
+
+
+
+
 /* ////////////////Le header////////////////////////// */
 .logo{
     display: flex;
     color: white;
     text-decoration: none;
-    float: left;
-    
+    float: left; 
     /* P2 */
 }
 .f38 {
@@ -35,9 +156,6 @@ h1, h2, p{
     border: 3px solid;
     font-family: "Anton";
     padding: 3px;
-    
-    
-    
 }
 .studio{
     font-size: 30px ;
@@ -46,10 +164,7 @@ h1, h2, p{
     font-family: "Arial";
     text-align: end;
     margin: auto;
-    
-    
 }
-
 header{
     margin: 20px auto;
     padding: 10px;
@@ -57,17 +172,13 @@ header{
     border-radius: 10px;
     /* Couleur de l'ombre du header (red green blue alpha)*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-
-    
     /* P2 */
     box-sizing: border-box;
     position: relative;
     max-width: 1200px;
 }
-
 nav{
-    float: right;
-    
+    float: right;   
 }
 /* blocage du float qui deborde */
 .clearFloat{
@@ -76,15 +187,13 @@ nav{
 a{
     float: left;
 }
-
 nav ul{
     margin: 0;
     padding: 0;
     display: flex;    
 }
 nav ul li{
-    list-style: none;
-     
+    list-style: none;    
 }
 nav ul li a{
     display: block;
@@ -101,7 +210,6 @@ nav ul li a:hover{
     color: #000;
     transition: 0.5s;
     border-radius: 5px;
-
 }
 /* Des que nous sommes inferieur à 1200px appliquons ce qui suit */
 @media(max-width :1200px)
@@ -110,7 +218,6 @@ nav ul li a:hover{
         margin: 20px;
     }
 }
-
 /* Des que nous sommes inferieur à 867px appliquons ce qui suit */
 @media(max-width :867px)
 {   
@@ -137,10 +244,8 @@ nav ul li a:hover{
     .menuButon.active:before{
         content: "\f00d";
         font-family: "fontAwesome";
-        line-height: 40px;
-        
+        line-height: 40px;   
     }
-
     nav {
         display: none;
     }
@@ -148,58 +253,26 @@ nav ul li a:hover{
         display: block;
         width: 100%;
     }
-   
     nav.active ul{
-        display: block;
-        
+        display: block;  
     }
     nav.active ul li a{
         margin: 5px;
     }
 }
 /* //////////////////////Positionnement du cadre 1//////////////////////////// */
-
 .cadre1{
     padding-top: 5px;
     background-size: cover;
     background-position: center;
     text-align: center;
     border-radius: 0% 0% 5% 5%;
-    
-    
-
-    
-    
-  
-    
 }
-.welcomePng{
-    
+.welcomePng{   
     max-width: 60%;
-    
-    
-    
-    
 }
-/* cadre2 */
 
-      .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
 
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-      }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        /* L'ombre juste en bas */
-        
-      }
- 
+
+
